@@ -1,0 +1,77 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.DiaDaSemana = exports.CURRENT_STATUS = exports.LISTA_CATEGORIAS_ITEMS = exports.DOMINIOS_EMPRESA = exports.CLASS_TYPES = exports.POSTS_CATEGORIES = exports.ROLES = exports.PF_OR_PJ = void 0;
+const PESSOA_FISICA = [1, { tipo: "FÍSICA", abbr: "PF" }];
+var PF_OR_PJ;
+(function (PF_OR_PJ) {
+    PF_OR_PJ["PF"] = "PESSOA_FISICA";
+    PF_OR_PJ["PJ"] = "PESSOA_JUR\u00CDDICA";
+})(PF_OR_PJ || (exports.PF_OR_PJ = PF_OR_PJ = {}));
+var ROLES;
+(function (ROLES) {
+    ROLES["ROLE_1"] = "idealizador";
+    ROLES["ROLE_2"] = "admin";
+    ROLES["ROLE_3"] = "voluntario_geral";
+    ROLES["ROLE_4"] = "voluntario_especifico";
+    ROLES["ROLE_5"] = "cadastrado";
+})(ROLES || (exports.ROLES = ROLES = {}));
+var POSTS_CATEGORIES;
+(function (POSTS_CATEGORIES) {
+    POSTS_CATEGORIES[POSTS_CATEGORIES["PRODUTO"] = 1] = "PRODUTO";
+    POSTS_CATEGORIES[POSTS_CATEGORIES["BLOG"] = 2] = "BLOG";
+    POSTS_CATEGORIES[POSTS_CATEGORIES["EVENTO"] = 3] = "EVENTO";
+    POSTS_CATEGORIES[POSTS_CATEGORIES["COMENTARIOS"] = 4] = "COMENTARIOS";
+    POSTS_CATEGORIES[POSTS_CATEGORIES["COLABORADOR"] = 5] = "COLABORADOR";
+    POSTS_CATEGORIES[POSTS_CATEGORIES["TICKET"] = 6] = "TICKET";
+})(POSTS_CATEGORIES || (exports.POSTS_CATEGORIES = POSTS_CATEGORIES = {}));
+var CLASS_TYPES;
+(function (CLASS_TYPES) {
+    CLASS_TYPES[CLASS_TYPES["TEO"] = 1] = "TEO";
+    CLASS_TYPES[CLASS_TYPES["LAB"] = 2] = "LAB";
+    CLASS_TYPES[CLASS_TYPES["WEB"] = 3] = "WEB";
+    CLASS_TYPES[CLASS_TYPES["PJT"] = 4] = "PJT";
+    CLASS_TYPES[CLASS_TYPES["ATV"] = 5] = "ATV";
+    CLASS_TYPES[CLASS_TYPES["EXA"] = 6] = "EXA";
+    CLASS_TYPES[CLASS_TYPES["DOC"] = 7] = "DOC";
+})(CLASS_TYPES || (exports.CLASS_TYPES = CLASS_TYPES = {}));
+var DOMINIOS_EMPRESA;
+(function (DOMINIOS_EMPRESA) {
+    DOMINIOS_EMPRESA[DOMINIOS_EMPRESA["EDUCACAO"] = 1] = "EDUCACAO";
+    DOMINIOS_EMPRESA[DOMINIOS_EMPRESA["SAUDE"] = 2] = "SAUDE";
+    DOMINIOS_EMPRESA[DOMINIOS_EMPRESA["TECNOLOGIA"] = 3] = "TECNOLOGIA";
+    DOMINIOS_EMPRESA[DOMINIOS_EMPRESA["FINANCAS"] = 4] = "FINANCAS";
+    DOMINIOS_EMPRESA[DOMINIOS_EMPRESA["COMERCIO"] = 5] = "COMERCIO";
+    DOMINIOS_EMPRESA[DOMINIOS_EMPRESA["INDUSTRIA"] = 6] = "INDUSTRIA";
+    DOMINIOS_EMPRESA[DOMINIOS_EMPRESA["SERVICOS"] = 7] = "SERVICOS";
+    DOMINIOS_EMPRESA[DOMINIOS_EMPRESA["GOVERNO"] = 8] = "GOVERNO";
+    DOMINIOS_EMPRESA[DOMINIOS_EMPRESA["ALIMENTOS"] = 9] = "ALIMENTOS";
+    DOMINIOS_EMPRESA[DOMINIOS_EMPRESA["TRANSPORTE"] = 10] = "TRANSPORTE";
+    DOMINIOS_EMPRESA[DOMINIOS_EMPRESA["CONSTRUCAO"] = 11] = "CONSTRUCAO";
+    DOMINIOS_EMPRESA[DOMINIOS_EMPRESA["OUTROS"] = 12] = "OUTROS";
+})(DOMINIOS_EMPRESA || (exports.DOMINIOS_EMPRESA = DOMINIOS_EMPRESA = {}));
+var LISTA_CATEGORIAS_ITEMS;
+(function (LISTA_CATEGORIAS_ITEMS) {
+    LISTA_CATEGORIAS_ITEMS[LISTA_CATEGORIAS_ITEMS["FLASHCARDS"] = 1] = "FLASHCARDS";
+    LISTA_CATEGORIAS_ITEMS[LISTA_CATEGORIAS_ITEMS["BOOKS"] = 2] = "BOOKS";
+    LISTA_CATEGORIAS_ITEMS[LISTA_CATEGORIAS_ITEMS["NOTEBOOKS"] = 3] = "NOTEBOOKS";
+})(LISTA_CATEGORIAS_ITEMS || (exports.LISTA_CATEGORIAS_ITEMS = LISTA_CATEGORIAS_ITEMS = {}));
+var CURRENT_STATUS;
+(function (CURRENT_STATUS) {
+    CURRENT_STATUS["RESTART"] = "restart";
+    CURRENT_STATUS["ONLOAD"] = "onload";
+    CURRENT_STATUS["STUDYING"] = "studying";
+    CURRENT_STATUS["READING"] = "reading";
+    CURRENT_STATUS["COMPLETED"] = "completed";
+    CURRENT_STATUS["RETRYING"] = "retrying";
+})(CURRENT_STATUS || (exports.CURRENT_STATUS = CURRENT_STATUS = {}));
+var DiaDaSemana;
+(function (DiaDaSemana) {
+    DiaDaSemana["Segunda"] = "Segunda-feira";
+    DiaDaSemana["Terca"] = "Ter\u00E7a-feira";
+    DiaDaSemana["Quarta"] = "Quarta-feira";
+    DiaDaSemana["Quinta"] = "Quinta-feira";
+    DiaDaSemana["Sexta"] = "Sexta-feira";
+    DiaDaSemana["Sabado"] = "S\u00E1bado";
+    DiaDaSemana["Domingo"] = "Domingo";
+})(DiaDaSemana || (exports.DiaDaSemana = DiaDaSemana = {}));
+//# sourceMappingURL=enums.js.map

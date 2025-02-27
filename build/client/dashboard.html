@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <title>Livro - Classrom-LAB</title>
+    <link rel="stylesheet" href="./../../styles/normalize.css">
+    <link rel="stylesheet" href="./../../styles/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./../../styles/globals.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 id="title">
+            <a href="/">
+                CLASSROOM-LAB
+            </a>
+        </h1>
+        <nav class="navigation">
+            <ul class="nav-list">
+                <li><a href="/pages/books">Books</a></li>
+                <li><a href="/pages/notebooks">Notebooks</a></li>
+                <li><a href="/pages/tasks">Tasks</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section id="dashboardUser">
+            <div class="container-fluid">
+                <div class="row">
+                    <aside class="barra-lateral col-12 col-sm-auto p-0">
+                        <div class="logo">
+                            <h2 class="py-4 m-0">Dashboard</h2>
+                        </div>
+                        <nav class="menu d-flex d-sm-block justify-content-center flex-wrap">
+                            <a href="#">
+
+                                Inicio
+                            </a>
+                            <a href="#">
+
+                                Entradas
+                            </a>
+                            <a href="#">
+
+                                Usuarios
+                            </a>
+                            <a href="#">
+
+                                Configuracion
+                            </a>
+                            <a href="#">
+
+                                Salir
+                            </a>
+
+                        </nav>
+                    </aside>
+
+                    <main class="main col">
+                        <div class="row">
+                            <div class="columna col-12 col-lg-7">
+                                <div class="widget nueva_entrada">
+                                    <h3 class="titulo">Nueva Entrada</h3>
+                                    <form action="">
+                                        <input type="text" placeholder="Titulo de la entrada" />
+                                        <textarea
+                                            placeholder="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, ab!"></textarea>
+                                        <div class="d-flex justify-content-end">
+                                            <button>
+
+                                                Enviar
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="columna col-12 col-lg-5">
+                                <div class="widget estadisticas">
+                                    <h3 class="titulo">Estadisticas</h3>
+                                    <div class="contenedor d-flex flex-wrap">
+                                        <div class="caja">
+                                            <h3>15,236</h3>
+                                            <p>Visitas</p>
+                                        </div>
+                                        <div class="caja">
+                                            <h3>1,831</h3>
+                                            <p>Registros</p>
+                                        </div>
+                                        <div class="caja">
+                                            <h3>$160,545</h3>
+                                            <p>Ingresos</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="widget comentarios">
+                                    <h3 class="titulo">Comentarios</h3>
+                                    <div class="contenedor">
+                                        <div class="comentario d-flex flex-wrap">
+                                            <div class="foto">
+                                                <a href="#">
+                                                    <img src="img/persona1.jpg" alt="" width="100">
+                                                </a>
+                                            </div>
+
+                                            <div class="texto">
+                                                <a href="#">John Doe</a>
+                                                <p>en <a href="#">Mi primera entrada</a></p>
+                                                <p class="texto-comentario">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+                                                    repellendus itaque optio dolores nemo at eveniet molestias delectus,
+                                                    magni consectetur.
+                                                </p>
+                                            </div>
+
+                                            <div class="botones d-flex justify-content-start flex-wrap w-100">
+                                                <button class="aprobar">
+
+                                                    Aprobar
+                                                </button>
+                                                <button class="eliminar">
+
+                                                    Eliminar
+                                                </button>
+                                                <button class="bloquear">
+
+                                                    Bloquear
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="comentario d-flex flex-wrap">
+                                            <div class="foto">
+                                                <a href="#">
+                                                    <img src="img/persona2.jpg" alt="" width="100">
+                                                </a>
+                                            </div>
+
+                                            <div class="texto">
+                                                <a href="#">John Doe</a>
+                                                <p>en <a href="#">Mi primera entrada</a></p>
+                                                <p class="texto-comentario">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+                                                    repellendus itaque optio dolores nemo at eveniet molestias delectus,
+                                                    magni consectetur.
+                                                </p>
+                                            </div>
+
+                                            <div class="botones d-flex justify-content-start flex-wrap w-100">
+                                                <button class="aprobar">
+
+                                                    Aprobar
+                                                </button>
+                                                <button class="eliminar">
+
+                                                    Eliminar
+                                                </button>
+                                                <button class="bloquear">
+
+                                                    Bloquear
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="comentario d-flex flex-wrap">
+                                            <div class="foto">
+                                                <a href="#">
+                                                    <img src="img/persona3.jpg" alt="" width="100">
+                                                </a>
+                                            </div>
+
+                                            <div class="texto">
+                                                <a href="#">John Doe</a>
+                                                <p>en <a href="#">Mi primera entrada</a></p>
+                                                <p class="texto-comentario">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+                                                    repellendus itaque optio dolores nemo at eveniet molestias delectus,
+                                                    magni consectetur.
+                                                </p>
+                                            </div>
+
+                                            <div class="botones d-flex justify-content-start flex-wrap w-100">
+                                                <button class="aprobar">
+
+                                                    Aprobar
+                                                </button>
+                                                <button class="eliminar">
+
+                                                    Eliminar
+                                                </button>
+                                                <button class="bloquear">
+
+                                                    Bloquear
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="copyright">&copy; 2023 Classrom-LAB. Todos os direitos reservados.</p>
+    </footer>
+    <script src="./../../my_modules/bootstrap.bundle.min.js"></script>
+
+    <script src="./../../my_modules/app2.js"></script>
+</body>
+
+</html>

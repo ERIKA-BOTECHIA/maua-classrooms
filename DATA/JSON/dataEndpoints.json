@@ -1,0 +1,35 @@
+[
+        {
+            "id": "endpoint-001",
+            "controller": "getMainRoot",
+            "BASE_URL": "http://localhost:9494",
+            "endpointRoot": "/",
+            "HTTPMethod": "GET",
+            "responseContent": "html",
+            "status_code": 200,
+            "collection":"mainCollection",
+            "description": "Endpoint com o metodo http GET , status code 200 e retorno de 'message' de descricao + array de objetos JSON con info de endpoints disponiveis"
+        },
+        {
+            "id": "endpoint-002",
+            "controller": "getEndpoints",
+            "BASE_URL": "http://localhost:9494/endpoints",
+            "endpoint": "/endpoints",
+            "httpMethod": "GET",
+            "responseType": "api/JSON",
+            "status_code": 200,
+            "collection":"mainCollection",
+            "description": "Endpoint com o metodo http GET , status code 200 e que corresponde a root '/endpoints' e que exibe um este JSON com endpoints construidos"
+        },
+        {
+            "id": "endpoint-003",
+            "controller": "getProjects",
+            "BASE_URL": "http://localhost:9494/projects",
+            "endpoint": "/projects",
+            "httpMethod": "GET",
+            "responseType": "api/JSON",
+            "status_code": 200,
+            "collection":"mainCollection",
+            "description": "Endpoint com o metodo http GET , status code 200 e que corresponde a root '/projects' e que exibe um este JSON com projects construidos"
+        }
+    ]
